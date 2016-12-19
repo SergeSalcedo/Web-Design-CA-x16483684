@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SK Telecom T1</title>
+			<meta name="viewport" content="width=device-width", initial scale=1"/>
+			<link rel="stylesheet" href="../style/bootstrap.min.css" />
+			<link rel="stylesheet" href="../style/style.css" />
+	</head>
+	<body>
+			<div class="navbar-static-top navbar-inverse verytop">
+				<div class="container">
+					<div class="navbar-brand" id="navcolor">
+						SK Telecom Team 1
+					</div>
+					<div class="navbar-brand" id="clockbox">
+					CLOCK
+					</div>
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+					More...
+					</button>
+					<div class="collapse navbar-collapse navHeaderCollapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="../index.html #Home" id="navcolor">Home</a></li>
+							<li><a href="#History" id="navcolor">History</a></li>
+							<li><a href="../team/team.html #Team" id="navcolor">Team</a></li>
+							<li><a href="../contacts/contacts.html #Contacts" id="navcolor">Contacts</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="jumbotron" id="jumbo2">
+				<div class="container">
+					<h1 id="jumbo1h">History</h1>
+					<h2 id="jumbo2h">Below is a brief timeline of the team known today as SK Telecom T1</h2>
+				</div>
+				<div class="container">
+					<h2 id="jumbo4h">But first...What IS League of Legends anyways?</h2>
+				</div>
+				<div class="container" id="lolhistoryback">
+				<img src="../image/lolhistory.jpg" alt="lolhistory" id="lolhistory">
+				</div>
+				<div class="container">
+				<h2 id="jumbo2h">League of Legends is a Multiplayer Online Battle Arena(MOBA) where 3-5 players from each side of their map battle it out to destroy the opposing teams Nexus and achieve victory! 
+				Each player controls their own champion to control with their own unique set of abilities. The main map is known as Summoners Rift and is 5 vs 5 players. There are 3 lanes; top, mid, bottom and then a jungle.
+				 The game is very complicated at first but once you understand the basics it can get quite addicting! More information on the game on their <a href="http://euw.leagueoflegends.com/">website</a>!
+				</h2>
+				</div>
+			</div>
+			<div class="jumbotron" id="jumbo3">
+				<div class="container">
+				<h1 id="jumbo1h">SK Telecom T1</h1><h2 id="jumbo2h">is a Korean based e-sports team for League of Legends. The team was established in February 2013 during Season 3 which consisted of Faker, bengi, Piglet, PooManDu and Impact.</h2>
+				<h2 id="jumbo2h">The team ended up winning the Season 3 World Championships</h2>
+				<img class="thumbnail" src="../image/season3win.jpg" alt="season3win" id="seasonsktwin">
+				<h2 id="jumbo2h">Then during Season 4 SK Telecom T1 lost versus Samsung Galaxy.</h2>
+				<h2 id="jumbo2h">During the Pre-Season 5, the team expanded to a total of 10 players that included: MaRin, Easyhoon, Bang, Wolf and Piccaboo.</h2>
+				<h2 id="jumbo2h">The team went on to win another World Championship in Season 5 with Faker, bengi and KkOma(coach) becoming the first to win two championships.</h2>
+				<h2 id="jumbo2h">In Season 6, SK Telecom T1 wins their 3rd World Championship. The team also announces that Duke and bengi will be leaving with Blank and Peanut taking their place, Huni has also replaced Duke in the team</h2>	
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<img class="thumbnail" src="../image/season5win.jpg" alt="season5" id="seasonsktwin">
+						</div>
+						<div class="col-md-6">
+							<img class="thumbnail" src="../image/season6win.jpg" alt="season6" id="seasonsktwin">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="bottomc">
+				Created by Serge Salcedo.
+				<a href="#">Back to top</a>
+			</div>
+			<script type="text/javascript">
+	function GetClock(){
+	var d=new Date();
+	var nhour=d.getHours(),nmin=d.getMinutes();
+	if(nmin<=9) nmin="0"+nmin
+
+	document.getElementById('clockbox').innerHTML=""+nhour+":"+nmin+"";
+	}
+
+	window.onload=function(){
+	GetClock();
+	setInterval(GetClock,1000);
+	}
+	</script>
+	</body>
+</html>

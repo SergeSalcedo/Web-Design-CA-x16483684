@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SK Telecom T1</title>
+			<meta name="viewport" content="width=device-width", initial scale=1"/>
+			<link rel="stylesheet" href="../style/bootstrap.min.css" />
+			<link rel="stylesheet" href="../style/style.css" />
+	</head>
+	<body>
+		<div class="navbar-static-top navbar-inverse verytop">
+			<div class="container">
+				<div class="navbar-brand" id="navcolor">
+					SK Telecom Team 1
+				</div>
+				<div class="navbar-brand" id="clockbox">
+					CLOCK
+				</div>
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+						More...
+					</button>
+				<div class="collapse navbar-collapse navHeaderCollapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="../index.html #Home" id="navcolor">Home</a></li>
+						<li><a href="../history/history.html #History" id="navcolor">History</a></li>
+						<li><a href="#Team" id="navcolor">Team</a></li>
+						<li><a href="../contacts/contacts.html #Contacts" id="navcolor">Contacts</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="jumbotron" id="cartoonback">
+			<div class="container">
+				<h1 id="jumbo1h">The Team</h1>
+			</div>
+			<div class="container">
+			<h2 id="jumbo2h">-Top-</h2>
+				<div class="row">
+					<div class="col-md-3">
+						<img class="thumbnail" src="../image/huni.jpg" alt="huni" >
+					</div>
+					<div class="col-md-9" id="jumbo2h">
+						Huni aka Heo Seung-hoon
+					</div>
+				</div>
+			</div>
+			<div class="container">
+			<h2 id="jumbo2h">-Jungle-</h2>
+				<div class="row">
+					<div class="col-md-3">
+						<img class="thumbnail" src="../image/peanut.jpg" alt="peanut" >
+					</div>
+					<div class="col-md-9" id="jumbo2h">
+						Peanut aka Han Wang-ho
+					</div>
+				</div>
+			</div>
+			<div class="container">
+			<h2 id="jumbo2h">-Mid-</h2>
+				<div class="row">
+					<div class="col-md-3">
+						<img class="thumbnail" src="../image/faker.jpg" alt="faker" >
+					</div>
+					<div class="col-md-9" id="jumbo2h">
+						Faker aka Lee Sang-hyeok
+					</div>
+				</div>
+			</div>
+			<div class="container">
+			<h2 id="jumbo2h">-AD Marksman-</h2>
+				<div class="row">
+					<div class="col-md-3">
+						<img class="thumbnail" src="../image/bang.jpg" alt="bang" >
+					</div>
+					<div class="col-md-9" id="jumbo2h">
+						Bang aka Bae Jun-Sik
+					</div>
+				</div>
+			</div>
+			<div class="container">
+			<h2 id="jumbo2h">-Support-</h2>
+				<div class="row">
+					<div class="col-md-3">
+						<img class="thumbnail" src="../image/wolf.jpg" alt="wolf" >
+					</div>
+					<div class="col-md-9" id="jumbo2h">
+						Wolf aka Lee Jae-Wan
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="bottomc">
+				Created by Serge Salcedo.
+				<a href="#">Back to top</a>
+			</div>
+	<script type="text/javascript">
+	function GetClock(){
+	var d=new Date();
+	var nhour=d.getHours(),nmin=d.getMinutes();
+	if(nmin<=9) nmin="0"+nmin
+
+	document.getElementById('clockbox').innerHTML=""+nhour+":"+nmin+"";
+	}
+
+	window.onload=function(){
+	GetClock();
+	setInterval(GetClock,1000);
+	}
+	</script>
+	</body>
+</html>

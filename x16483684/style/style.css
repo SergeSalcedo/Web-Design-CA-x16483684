@@ -1,0 +1,97 @@
+.verytop{
+	height:100%;
+	background: #ff1919; 
+	background: -moz-linear-gradient(top,  #ff1919 0%, #ff9d35 100%); 
+	background: -webkit-linear-gradient(top,  #ff1919 0%,#ff9d35 100%); 
+	background: linear-gradient(to bottom,  #ff1919 0%,#ff9d35 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff1919', endColorstr='#ff9d35',GradientType=0 ); 
+
+}
+#navcolor{
+	color:white;
+}
+
+#jumbo1{
+	background-image:url('../image/skthome.jpg');
+	background-attachment:fixed;
+	min-height:600px;
+	margin-bottom:0px;
+	background-repeat:no-repeat;
+	background-size:cover;
+	padding-bottom:50px;
+}
+#jumbo1h{
+	color:white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#jumbo2h{
+	font-size:25px;
+	color:white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#jumbo3h{
+	font-size:18px;
+	color:white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#bottomc{
+	background:black;
+	color:white;
+	text-align:center;
+}
+#branding{
+	margin:0 auto;
+	display:block;
+}
+#jumbo2{
+	background-image:url('../image/sktgroup.png');
+	background-attachment:fixed;
+	min-height:600px;
+	margin-bottom:0px;
+	background-repeat:no-repeat;
+	background-size:cover;
+	padding-bottom:50px;
+}
+#jumbo4h{
+	font-size:25px;
+	color:white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	text-align:center;
+	font-style:italic;
+}
+#lolhistory{
+	height:600px;
+	width:100%;
+}
+#lolhistoryback{
+	background:#004d99;
+}
+#jumbo3{
+	background:#ff5500;
+	margin-bottom:0px;
+	background-repeat:no-repeat;
+	background-size:cover;
+	padding-bottom:50px;
+}
+#seasonsktwin{
+	height: 300px;
+	width: 400px;
+	margin:0 auto;
+	display:block;
+}
+#contactsback{
+	background:#ff6600;
+	margin-bottom:0px;
+	background-repeat:no-repeat;
+	background-size:cover;
+	padding-bottom:50px;
+}
+#cartoonback{
+	background-image:url('../image/skthands.jpg');
+	background-attachment:fixed;
+	min-height:600px;
+	margin-bottom:0px;
+	background-repeat:no-repeat;
+	background-size:cover;
+	padding-bottom:50px;
+}

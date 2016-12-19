@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>SK Telecom T1</title>
+			<meta name="viewport" content="width=device-width", initial scale=1"/>
+			<link rel="stylesheet" href="style/bootstrap.min.css" />
+			<link rel="stylesheet" href="style/style.css" />
+		</head>
+		<body>
+			<div class="navbar-static-top navbar-inverse verytop">
+				<div class="container">
+					<div class="navbar-brand" id="navcolor">
+						SK Telecom Team 1
+					</div>
+					<div class="navbar-brand" id="clockbox">
+					CLOCK
+				</div>
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+					More...
+					</button>
+					<div class="collapse navbar-collapse navHeaderCollapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#Home" id="navcolor">Home</a></li>
+							<li><a href="history/history.html #History" id="navcolor">History</a></li>
+							<li><a href="team/team.html #Team" id="navcolor">Team</a></li>
+							<li><a href="contacts/contacts.html #Contacts" id="navcolor">Contacts</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="jumbotron" id="jumbo1">
+				<div class="container">
+					<div class="container">
+						<<h1 id="jumbo1h">Welcome!<p id="javaw"></p></h1><button onclick="myFunction()">Click Me!</button>
+					</div>
+					<div class="col-md-12">
+						<br/>
+						<h2 id="jumbo2h">This blog is dedicated to the E-Sports <span><a href="http://euw.leagueoflegends.com/">League of Legends</a></span> team known as SKT Telecom Team 1</h2>
+						<br/>
+						<p id="jumbo3h">I hope you as the reader enjoy going through this blog knowing more information on the Korean SK Telecom Team as I've created it! </p>
+					</div>
+					<div>
+					<img id="branding" src="./image/brand.png" alt="brand">
+					</div>
+				</div>
+			</div>
+			<div id="bottomc">
+				Created by Serge Salcedo.
+				<a href="#">Back to top</a>
+			</div>
+		</body>
+		<script>
+		function myFunction() {
+			var person = prompt("Please enter your name", "User");
+			if (person != null) {
+				document.getElementById("javaw").innerHTML =
+				"Hello " + person + "! How are you today?";
+				}
+			}
+		</script>
+		<script type="text/javascript">
+	function GetClock(){
+	var d=new Date();
+	var nhour=d.getHours(),nmin=d.getMinutes();
+	if(nmin<=9) nmin="0"+nmin
+
+	document.getElementById('clockbox').innerHTML=""+nhour+":"+nmin+"";
+	}
+
+	window.onload=function(){
+	GetClock();
+	setInterval(GetClock,1000);
+	}
+	</script>
+	<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="js./bootstrap.js"></script>
+		<script>
+			$(function() {
+				$('a[href*="#"]:not([href="#"])').click(function() {
+					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+						var target = $(this.hash);
+						target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+						if (target.length) {
+							$('html, body').animate({
+								scrollTop: target.offset().top
+							}, 1000);
+							return false;
+						}
+					}
+				});
+			});
+		</script>
+	</html>
